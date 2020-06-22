@@ -1,0 +1,64 @@
+#partnership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #10b5e9;
+  padding: 150px;
+}
+
+@media only screen and (max-width: 500px) {
+  #partnership {
+    padding: 85px 10px 85px 10px;
+  }
+}
+
+#partnership h1 {
+  color: white;
+}
+
+#partnership p {
+  color: white;
+}
+
+#partnership .partner-btn {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* stacks vertically instead of horizontally */
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* adds equal spacing above top, belo                                  bottom, and between all items */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: auto;
+  border-radius: 14PX;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #partnership .partner-btn {
+    padding: 0px;
+    height: 100px;
+  }
+}
+
+#partnership .partner-btn H3 {
+  color: orange;
+  margin: 15px;
+}
+/*# sourceMappingURL=Partnership.css.map */

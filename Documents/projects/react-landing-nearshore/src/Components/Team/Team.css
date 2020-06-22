@@ -1,0 +1,13 @@
+#Team {
+  padding-top: 130px;
+  background-image: url(/team-bkg.png);
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Team h1 {
+  color: #5c93ce;
+}
+/*# sourceMappingURL=Team.css.map */

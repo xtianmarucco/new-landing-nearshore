@@ -1,0 +1,58 @@
+#howitworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 150px;
+}
+
+#howitworks h1 {
+  color: #5c93ce;
+}
+
+#howitworks p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 2;
+  color: "333";
+}
+
+#howitworks .flex-grid {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#howitworks .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+  height: auto;
+}
+
+#howitworks .text-step {
+  top: 50%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  height: 100%;
+  border-radius: 14PX;
+  width: auto;
+  -webkit-box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+}
+/*# sourceMappingURL=Howitworks.css.map */

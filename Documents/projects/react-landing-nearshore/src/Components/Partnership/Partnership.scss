@@ -1,0 +1,42 @@
+#partnership{
+    display: flex;
+    justify-content: center;
+    background-color: #10b5e9;
+    padding: 150px;
+    @media only screen and (max-width: 500px) {
+
+        padding: 85px 10px 85px 10px;    }
+
+    h1{ color: white;}
+
+    p{color: white;}
+
+    .partner-btn {
+        padding: 25px;
+        display: flex;
+        flex-direction: column; /* stacks vertically instead of horizontally */
+        justify-content: space-around; /* adds equal spacing above top, belo                                  bottom, and between all items */
+        align-items: center;
+        vertical-align: middle; 
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        height: auto;
+        border-radius: 14PX;
+        width: auto;
+
+
+        @media only screen and (max-width: 500px) {
+        padding: 0px;
+         height: 100px;
+        }
+
+        H3{
+            color: orange;
+            margin: 15px;
+
+        }
+    }
+    
+
+}

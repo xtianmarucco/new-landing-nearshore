@@ -1,0 +1,70 @@
+#clients{
+  
+    padding-top: 130px;
+    background-image: url(/clients-bkg.png);
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        color: #5c93ce;
+      }
+
+     
+      .client-card{
+          background-color: white;
+          padding: 25px;
+          border-radius: 15px;
+          box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+          margin-top: 20px;
+          margin-bottom: 20px;
+        
+        
+          h4{
+            color: #5c93ce;
+          }
+
+          .profile-row{
+              display: flex;
+              
+
+              img{
+                  width: 150px;
+                  height: auto;
+              }
+
+          }
+
+          .data-container{
+                
+            display: flex;
+            flex-direction: column; /* stacks vertically instead of horizontally */
+            justify-content: space-evenly; 
+            vertical-align: middle;
+            margin-left: 25px;
+          }
+
+          .rating{
+            margin-top: 82px;
+            margin-left: 30px;
+          }
+
+          .client-testimony{
+
+            padding-top: 25px;
+          }
+     }
+     ol{
+       position: absolute;
+      top: 119%;
+      }
+       .carousel-indicators li{
+        background-color: #10b5e9;
+      }
+      
+
+}
+
+
+

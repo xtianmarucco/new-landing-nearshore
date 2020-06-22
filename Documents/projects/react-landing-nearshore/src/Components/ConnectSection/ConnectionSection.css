@@ -1,0 +1,36 @@
+#connectionsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #10b5e9;
+  padding: 50px;
+}
+
+#connectionsection p {
+  color: white;
+}
+
+#connectionsection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#connectionsection .form-connect {
+  padding: 25px;
+}
+
+#connectionsection .form-connect .form-container {
+  background-color: white;
+  height: 100%;
+  width: auto;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=ConnectionSection.css.map */

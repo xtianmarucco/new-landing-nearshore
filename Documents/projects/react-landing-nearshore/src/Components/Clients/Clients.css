@@ -1,0 +1,72 @@
+#clients {
+  padding-top: 130px;
+  background-image: url(/clients-bkg.png);
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#clients h1 {
+  color: #5c93ce;
+}
+
+#clients .client-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#clients .client-card h4 {
+  color: #5c93ce;
+}
+
+#clients .client-card .profile-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#clients .client-card .profile-row img {
+  width: 150px;
+  height: auto;
+}
+
+#clients .client-card .data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* stacks vertically instead of horizontally */
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+#clients .client-card .rating {
+  margin-top: 82px;
+  margin-left: 30px;
+}
+
+#clients .client-card .client-testimony {
+  padding-top: 25px;
+}
+
+#clients ol {
+  position: absolute;
+  top: 119%;
+}
+
+#clients .carousel-indicators li {
+  background-color: #10b5e9;
+}
+/*# sourceMappingURL=Clients.css.map */

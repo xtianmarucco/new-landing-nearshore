@@ -5,7 +5,7 @@ import team from './team-up.png' ;
 import './Howitworks.css';
 
 
-const howitworks = props =>(
+const howitworksEs = props =>(
  
     <section id="howitworks">
         <div className="container">
@@ -19,8 +19,8 @@ const howitworks = props =>(
 
                 <div className="row">
 
-                 <div className="text-step col-md-5"> <p>We meet with the client to brief about his idea and work it out togheter.</p></div>
-                 <div className="number-step text-center col-md-2"><h1>1</h1></div>
+                 <div className="text-step col-md-5"> <p>Nos reunimos con el cliente para escuchar su idea y trabajarla juntos.</p></div>
+                 <div className="number-step text-center col-md-2"><h1>4</h1></div>
                  <div className="img-step col-md-5">  
                  <img className="img-fluid" src={meet} alt="meet" />
                 </div>
@@ -31,13 +31,13 @@ const howitworks = props =>(
                  <div className="img-step col-md-5">  
                  <img className="img-fluid" src={planning} alt="meet" />
                 </div>
-                 <div className="number-step text-center col-md-2"><h1>2</h1></div>
-                 <div className="text-step col-md-5"> <p>We team up the assets for your project and then they are ready to dig into the details and start working.</p></div>
+                 <div className="number-step text-center col-md-2"><h1>4</h1></div>
+                 <div className="text-step col-md-5"> <p>Ponemos a disposición nuestro plantel de profesionales y seleccionamos los perfiles que mejor se adapten a los requerimientos del cliente.</p></div>
                 </div>
 
                 <div className="row">
 
-                 <div className="text-step col-md-5"> <p>Lorem doloremque ab quos ratione fugiat saepe veniam qui recusandae.</p></div>
+                 <div className="text-step col-md-5"> <p>Armamos un equipo acorde, los empapamos en los detalles y lo preparamos para que comiencen a trabajar.</p></div>
                  <div className="number-step text-center col-md-2"><h1>4</h1></div>
                  <div className="img-step col-md-5">  
                  <img className="img-fluid" src={team} alt="meet" />
@@ -65,4 +65,4 @@ const howitworks = props =>(
 
 
 );
-export default howitworks;
+export default howitworksEs;

@@ -9,6 +9,14 @@
   padding: 50px;
 }
 
+@media only screen and (max-width: 500px) {
+  #connectionsection {
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 #connectionsection p {
   color: white;
 }
@@ -23,8 +31,16 @@
           flex-direction: row;
 }
 
+@media only screen and (max-width: 500px) {
+  #connectionsection .container {
+    display: block;
+  }
+}
+
 #connectionsection .form-connect {
   padding: 25px;
+  height: auto;
+  width: auto;
 }
 
 #connectionsection .form-connect .form-container {

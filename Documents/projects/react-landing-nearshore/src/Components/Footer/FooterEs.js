@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaTwitt
 
 const footer = props =>(
 <section class="footer" id="footer" >
-<div class="footer-title text-center"><h2>Contact us</h2></div>
+<div class="footer-title text-center"><h2>Contáctanos</h2></div>
 <div className="container">
     <br/>
     <br/>
@@ -40,14 +40,14 @@ const footer = props =>(
         <div class="footer-menu-links-items">
             <ul class="footer_list_ul_links">
                 <li class="links-menu-li-menu">
-                    <a href="https://devlights.com/#about">About us</a></li>
+                    <a href="https://devlights.com/#about">Nosotros</a></li>
                     <li class="links-menu-li-menu"> 
-                     <a href="https://devlights.com/nearshore-software-development/">Nearshore software development</a></li>
+                     <a href="https://devlights.com/nearshore-software-development/">Servicio de desarrollo Nearshore</a></li>
                     <li class="links-menu-li-menu">
-                        <a href="https://devlights.com/#careers">Join the team</a></li>
-                    <li class="links-menu-li-menu"><a href="#services">Sevices</a></li>
-                    <li class="links-menu-li-menu"><a href="#clients">Clients</a></li>
-                    <li class="links-menu-li-menu"><a href="#intro">Home</a></li>
+                        <a href="https://devlights.com/#careers">Unite al equipo</a></li>
+                    <li class="links-menu-li-menu"><a href="#services">Servicios</a></li>
+                    <li class="links-menu-li-menu"><a href="#clients">Clientes</a></li>
+                    <li class="links-menu-li-menu"><a href="#intro">Inicio</a></li>
                     <li class="links-menu-li-menu"><a href="#portfolio">Portfolio</a></li>
                     <br/>
                     <div class="social_icons">

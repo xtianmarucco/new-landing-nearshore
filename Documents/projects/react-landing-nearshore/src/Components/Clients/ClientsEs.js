@@ -13,7 +13,7 @@ const Clients = props =>(
         <div className="container">
             <div className="row">
                 <div className="intro-title container col-lg-10 col-md-10 col-xs-10 col-sm-10 text-center">
-                    <h1> Clients say..!</h1>
+                    <h1> La opinión de nuestros clientes</h1>
                     <br/>
                     <br/>
                     
@@ -27,60 +27,6 @@ const Clients = props =>(
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                         <div className="client-card container col-md-10 col-xs-12 ">
-                        <div className="profile-row">
-                            <div className="img-container">
-                            <img className="img-fluid" src={darlene} alt="meet" />
-
-                            </div>
-                            <div className="data-container text-left">
-                                <div className="client-name">
-                                    <h4> Darlene Liebman</h4>
-                                </div>
-                                <div className="client-position">
-                                    <h6>Creative Humans</h6>
-                                </div>
-                            </div>
-                            <div className="rating">
-                            <img className="img-fluid" src={stars} alt="meet" />
-                            </div>
-                        </div>
-
-                        <div className="client-testimony text-left ">
-                            <p>Founder</p>
-                            <p> Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small.</p>
-                        </div>
-
-                    </div>
-                        </div>
-                        <div class="carousel-item">
-                        <div className="client-card container col-md-10 col-xs-12 ">
-                        <div className="profile-row">
-                            <div className="img-container">
-                            <img className="img-fluid" src={ross} alt="meet" />
-
-                            </div>
-                            <div className="data-container text-left">
-                                <div className="client-name">
-                                    <h4> Ross Forsyth</h4>
-                                </div>
-                                <div className="client-position">
-                                    <h6>Human design</h6>
-                                </div>
-                            </div>
-                            <div className="rating">
-                            <img className="img-fluid" src={stars} alt="meet" />
-                            </div>
-                        </div>
-
-                        <div className="client-testimony text-left ">
-                            <p>Director of technology</p>
-                            <p> DevLights is a great team to work with. Not only do they have the skills to get the job done but they communicate effectively at every level throughout the project. Their team was just what we needed!</p>
-                        </div>
-
-                    </div>
-                        </div>
-                        <div class="carousel-item">
-                        <div className="client-card container col-md-10 col-xs-12">
                         <div className="profile-row">
                             <div className="img-container">
                             <img className="img-fluid" src={lindsay} alt="meet" />
@@ -100,9 +46,62 @@ const Clients = props =>(
                         </div>
 
                         <div className="client-testimony text-left ">
-                            <p>Lead Developer
-</p>
-                            <p> Devlights has been such a useful team, I’ve come to look at them like family. With the variety of experience everyone has, it seems there’s always a great fit for a variety of projects. I have brought them on to long-term projects with me and I wouldn’t have it any other way</p>
+                            <p>Lead Developer</p>
+                            <p>El equipo de Devlights ha sido de gran ayuda, los considero casi familia. Amplia experiencia y conocimientos técnicos, siempre tienen el personal adecuado para encarar cualquier tipo de proyecto. Incluirlos en proyectos a largo plazo fue una excelente decisión.</p>
+                        </div>
+
+                    </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div className="client-card container col-md-10 col-xs-12 ">
+                        <div className="profile-row">
+                            <div className="img-container">
+                            <img className="img-fluid" src={ross} alt="meet" />
+
+                            </div>
+                            <div className="data-container text-left">
+                                <div className="client-name">
+                                    <h4>Ross Forsyth </h4>
+                                </div>
+                                <div className="client-position">
+                                    <h6>Human design</h6>
+                                </div>
+                            </div>
+                            <div className="rating">
+                            <img className="img-fluid" src={stars} alt="meet" />
+                            </div>
+                        </div>
+
+                        <div className="client-testimony text-left ">
+                            <p>Director of technology</p>
+                            <p>Devlights es un gran equipo con el cual trabajar, no solo tienen las habilidades para realizar el trabajo, sino que también se comunican de manera efectiva a lo largo de todo el proyecto. ¡Su equipo era exactamente lo que necesitaba!</p>
+                        </div>
+
+                    </div>
+                        </div>
+                        <div class="carousel-item">
+                        <div className="client-card container col-md-10 col-xs-12">
+                        <div className="profile-row">
+                            <div className="img-container">
+                            <img className="img-fluid" src={darlene} alt="meet" />
+
+                            </div>
+                            <div className="data-container text-left">
+                                <div className="client-name">
+                                    <h4> Darlene Liebman</h4>
+                                </div>
+                                <div className="client-position">
+                                    <h6>Creative Humans</h6>
+                                </div>
+                            </div>
+                            <div className="rating">
+                            <img className="img-fluid" src={stars} alt="meet" />
+                            </div>
+                        </div>
+
+                        <div className="client-testimony text-left ">
+                            <p>Fundadora</p>
+                            <p> Trabajar con el equipo de Devlights ha sido una gran experiencia. El equipo tiene los conocimientos, responde y son muy amables. Realmente los recomiendo para cualquier tipo de proyecto ya sea grande o pequeño.</p>
                         </div>
 
                     </div>

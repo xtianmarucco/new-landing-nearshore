@@ -14,6 +14,7 @@
 }
 
 #footer .row {
+  padding-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +59,59 @@
   margin-top: 50px;
 }
 
+#footer .row .footer_link_last {
+  padding: 20px;
+}
+
 #footer .row .footer_link_last .footer-menu-links-title h4 {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
   font-family: 'Segoe UI', 'Open Sans';
-  margin-left: 50px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
+#footer .row ul {
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  #footer .row ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+#footer .row ul .icons-footer {
+  position: relative;
+  right: 35px;
+  color: #5c93ce;
+  top: 25px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #footer .row .datos {
+    padding: 20px;
+  }
+}
+
+#footer .footer-menu-links-items {
+  margin-top: 45px;
+}
+
+#footer .footer-menu-links-items .social_icons .icons-footer-links {
+  color: #5c93ce;
+  font-size: 25px;
+}
+
+#footer .footer-menu-links-items .social_icons a {
+  margin-left: 10px;
+  height: 20px;
 }
 /*# sourceMappingURL=Footer.css.map */

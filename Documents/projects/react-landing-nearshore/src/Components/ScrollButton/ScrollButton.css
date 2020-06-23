@@ -1,0 +1,9 @@
+aside {
+  border-radius: 50px;
+  padding: 11px;
+}
+
+aside :focus {
+  outline: red;
+}
+/*# sourceMappingURL=ScrollButton.css.map */

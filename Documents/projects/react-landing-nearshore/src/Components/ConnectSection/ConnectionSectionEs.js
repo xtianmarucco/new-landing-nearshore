@@ -11,16 +11,16 @@ const connect = props =>(
             <div className="row flex-grid">
                 <div className="intro-title container col-lg-12 col-md-12 col-xs-12 col-sm-12" >
                    <div className="col-md-6 col-xs-12 col-sm-12 text-connect">
-                       <h1>We connect our clients with their products</h1>
+                       <h1>Conectamos al cliente con su producto</h1>
                        <br/>
-                       <p>We make things happen here at Devlights. outsourcing solutions provide clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case and IT DEVLIGHTS is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.</p>
+                       <p>En Devlights hacemos que las cosas pasen. Nuestro servicio de outsourcing le da a nuestros clientes acceso a una vasta base de talento tecnológico. Conseguir el talento adecuado para formar un equipo es esencial para el éxito de cualquier negocio o proyecto, pero la eficiencia requiere dedicar recursos significativos al proyecto. Muchas veces el presupuesto puede ser acotado y los tiempos para los proyectos son ajustados o la compañía simplemente necesita alguien que se encargue full-time del proyecto para realizar una tarea. En este caso Nuestro servicio es la solución para muchos de nuestros clientes. Devlights puede brindarle mano de obra especializada para proyectos a largo y corto plazo, formar equipos de trabajo según sus necesidades y a una fracción del costo.</p>
                    </div>
                    <div className="col-md-6 col-xs-12 col-sm-12 text-center form-connect">
                   
 
                       <div className="form-container">
                       <div className="col-sm-12 text-connect text-center">
-                       <h1>Let´s get in touch</h1>
+                       <h1>Contactanos</h1>
                        <br/>
                        <MainForm/>
                       

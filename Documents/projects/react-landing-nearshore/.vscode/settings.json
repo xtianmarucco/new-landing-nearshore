@@ -13,5 +13,6 @@
         "titleBar.activeBackground": "#5f9ea0",
         "titleBar.border": "#5f9ea0",
         "titleBar.inactiveBackground": "#5f9ea099"
-    }
+    },
+    "git.ignoreLimitWarning": true
 }

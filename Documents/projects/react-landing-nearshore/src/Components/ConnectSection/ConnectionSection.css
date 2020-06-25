@@ -9,6 +9,19 @@
   padding: 50px;
 }
 
+#connectionsection h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: aleo;
+  margin-top: 70px;
+}
+
+#connectionsection h4 {
+  color: #fff;
+  font-weight: bold;
+  font-family: aleo;
+}
+
 @media only screen and (max-width: 500px) {
   #connectionsection {
     padding: 0px;
@@ -43,10 +56,22 @@
   width: auto;
 }
 
+@media only screen and (max-width: 500px) {
+  #connectionsection .form-connect {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 #connectionsection .form-connect .form-container {
   background-color: white;
   height: 100%;
   width: auto;
   border-radius: 15px;
+  padding: 25px;
+}
+
+#connectionsection .form-connect .form-container h1 {
+  margin-top: 15px;
 }
 /*# sourceMappingURL=ConnectionSection.css.map */

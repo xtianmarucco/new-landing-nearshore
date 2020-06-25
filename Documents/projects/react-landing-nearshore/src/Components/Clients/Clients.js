@@ -11,7 +11,7 @@ const Clients = props =>(
  
     <section id="clients">
         <div className="container">
-            <div className="row">
+            <div className="row text-center">
                 <div className="intro-title container col-lg-10 col-md-10 col-xs-10 col-sm-10 text-center">
                     <h1> Clients say..!</h1>
                     <br/>
@@ -24,9 +24,9 @@ const Clients = props =>(
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <div className="client-card container col-md-10 col-xs-12 ">
+                    <div class="carousel-inner container">
+                        <div class="carousel-item active  col-md-10 col-xs-12">
+                        <div className="client-card ">
                         <div className="profile-row">
                             <div className="img-container">
                             <img className="img-fluid" src={darlene} alt="meet" />
@@ -52,8 +52,8 @@ const Clients = props =>(
 
                     </div>
                         </div>
-                        <div class="carousel-item">
-                        <div className="client-card container col-md-10 col-xs-12 ">
+                        <div class="carousel-item  col-md-10 col-xs-12">
+                        <div className="client-card">
                         <div className="profile-row">
                             <div className="img-container">
                             <img className="img-fluid" src={ross} alt="meet" />
@@ -78,9 +78,9 @@ const Clients = props =>(
                         </div>
 
                     </div>
-                        </div>
-                        <div class="carousel-item">
-                        <div className="client-card container col-md-10 col-xs-12">
+                    </div>
+                        <div class="carousel-item col-md-10 col-xs-12">
+                        <div className="client-card  ">
                         <div className="profile-row">
                             <div className="img-container">
                             <img className="img-fluid" src={lindsay} alt="meet" />
@@ -100,8 +100,7 @@ const Clients = props =>(
                         </div>
 
                         <div className="client-testimony text-left ">
-                            <p>Lead Developer
-</p>
+                            <p>Lead Developer</p>
                             <p> Devlights has been such a useful team, I’ve come to look at them like family. With the variety of experience everyone has, it seems there’s always a great fit for a variety of projects. I have brought them on to long-term projects with me and I wouldn’t have it any other way</p>
                         </div>
 
@@ -120,12 +119,6 @@ const Clients = props =>(
 
                 </div>
                                 
-
-
-
-
-
-
             </div>
         </div>
     </section>

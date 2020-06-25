@@ -1,8 +1,8 @@
 import React,  {Component} from 'react';
 import  { Form, FormGroup, Input, Label, Button,  } from 'reactstrap';
-import './MainForm.css';
+import './FooterForm.css';
 
-class form extends Component {
+class footerForm extends Component {
 
 
     constructor() {
@@ -62,10 +62,10 @@ class form extends Component {
                     />
                      <div className="valid-feedback">Looks good!</div>
                 </FormGroup>
-                <Button className="btn-send">Send</Button>
+                <Button className="btn-send">Send Mail</Button>
             </Form>
         );
     }
 }
 
-export default form;
+export default footerForm;

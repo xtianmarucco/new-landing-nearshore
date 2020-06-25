@@ -61,6 +61,7 @@
 
 #footer .row .footer_link_last {
   padding: 20px;
+  padding-left: 0;
 }
 
 #footer .row .footer_link_last .footer-menu-links-title h4 {
@@ -97,12 +98,22 @@
 
 @media only screen and (max-width: 500px) {
   #footer .row .datos {
-    padding: 20px;
+    padding: 30px;
   }
+}
+
+#footer .row h4 {
+  font-weight: 500;
+  font-family: "Open sans";
+  margin-left: 17px;
 }
 
 #footer .footer-menu-links-items {
   margin-top: 45px;
+}
+
+#footer .footer-menu-links-items .social_icons {
+  padding: 10px;
 }
 
 #footer .footer-menu-links-items .social_icons .icons-footer-links {
@@ -111,7 +122,7 @@
 }
 
 #footer .footer-menu-links-items .social_icons a {
-  margin-left: 10px;
   height: 20px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=Footer.css.map */

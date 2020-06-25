@@ -4,13 +4,13 @@
  aside{
     border-radius: 50px;
     padding: 11px;
-    :focus {
-        outline: red;
-    }
+  button:focus{
+    outline: none;
 
-    }
+  } 
+}
     
-
+  
     
 
  

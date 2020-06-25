@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import FooterFormEs from '../FooterForm/FooterFormEs'
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa' ;
 
 
@@ -57,6 +58,13 @@ const footer = props =>(
                     </div>
                     </ul>
         </div>
+    </div>
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 wow fadeInUp form_email" >
+        <h4>Contáctanos</h4>
+
+        <FooterFormEs/>
+
+
     </div>
 
 

@@ -3,7 +3,7 @@ aside {
   padding: 11px;
 }
 
-aside :focus {
-  outline: red;
+aside button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=ScrollButton.css.map */

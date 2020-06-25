@@ -11,7 +11,7 @@
   color: #5c93ce;
 }
 
-#clients .client-card {
+#clients .carousel-item {
   background-color: white;
   padding: 25px;
   border-radius: 15px;
@@ -21,22 +21,22 @@
   margin-bottom: 20px;
 }
 
-#clients .client-card h4 {
+#clients .carousel-item h4 {
   color: #5c93ce;
 }
 
-#clients .client-card .profile-row {
+#clients .carousel-item .profile-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#clients .client-card .profile-row img {
+#clients .carousel-item .profile-row img {
   width: 150px;
   height: auto;
 }
 
-#clients .client-card .data-container {
+#clients .carousel-item .data-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,13 +52,26 @@
   margin-left: 25px;
 }
 
-#clients .client-card .rating {
+#clients .carousel-item .rating {
   margin-top: 82px;
   margin-left: 30px;
 }
 
-#clients .client-card .client-testimony {
+@media only screen and (max-width: 500px) {
+  #clients .carousel-item .rating {
+    position: absolute;
+    top: 70px;
+  }
+}
+
+#clients .carousel-item .client-testimony {
   padding-top: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  #clients .carousel-item .client-testimony {
+    margin-top: 50px;
+  }
 }
 
 #clients ol {

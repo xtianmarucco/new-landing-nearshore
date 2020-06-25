@@ -1,5 +1,6 @@
 import React from 'react';
 import MainForm from '../MainForm/MainForm';
+
 import './ConnectionSection.css';
 
 
@@ -19,11 +20,9 @@ const connect = props =>(
                   
 
                       <div className="form-container">
-                      <div className="col-sm-12 text-connect text-center">
-                       <h1>Let´s get in touch</h1>
-                       <br/>
+                      <div className="col-sm-12  text-center">
+                       <h1  style={{color:'#10b5e9' }}>Let´s get in touch</h1>
                        <MainForm/>
-                      
                       </div>
 
                       </div>  

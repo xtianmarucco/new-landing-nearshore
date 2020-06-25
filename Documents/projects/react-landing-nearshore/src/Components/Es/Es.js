@@ -10,6 +10,8 @@ import ClientsEs from '../Clients/ClientsEs';
 import TeamEs from '../Team/TeamEs';
 import FooterEs from '../Footer/FooterEs';
 import ToolbarEs from '../Toolbar/ToolbarEs';
+import ScrollButton from '../ScrollButton/ScrollButton';
+
 
 
 
@@ -30,6 +32,7 @@ function Es() {
          <ClientsEs/>
          <TeamEs/>
          <FooterEs/>
+         <ScrollButton/>    
 
 
         

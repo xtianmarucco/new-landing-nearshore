@@ -7,7 +7,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <div>
-        <ScrollUpButton style={{ height: 65, width: 60, background: '#5c93ce', fill: '#fff', padding: 15, border: 'unset' }} />
+        <ScrollUpButton style={{ height: 65, width: 60, background: '#5c93ce', fill: '#fff', padding: 15, border: 'unset', outline:'none' }} />
       </div>
     );
   }

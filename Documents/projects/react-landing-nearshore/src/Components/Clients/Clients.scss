@@ -12,7 +12,7 @@
       }
 
      
-      .client-card{
+      .carousel-item{
           background-color: white;
           padding: 25px;
           border-radius: 15px;
@@ -48,11 +48,25 @@
           .rating{
             margin-top: 82px;
             margin-left: 30px;
+
+            @media only screen and (max-width: 500px) {
+              position: absolute;
+              top: 70px;      
+             }
+
+           
+
+
+
           }
 
           .client-testimony{
 
             padding-top: 25px;
+
+            @media only screen and (max-width: 500px) {
+              margin-top: 50px;    
+             }
           }
      }
      ol{

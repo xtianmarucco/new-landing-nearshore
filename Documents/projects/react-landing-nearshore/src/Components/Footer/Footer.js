@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterForm from '../FooterForm/FooterForm';
 import './Footer.css';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa' ;
 
@@ -31,12 +32,12 @@ const footer = props =>(
                 < FaEnvelope className="icons-footer"/><p class="footer-first-col-p">  contacto@devlights.com</p>
                 </li>
             </ul>
-         </div>
             <div class="clutch-widget logo_clutch"  data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="414104"><iframe id="iframe-0.8313833580771808" width="100%" src="https://widget.clutch.co/widgets/get/2/darkbg?ref_domain=devlights.com&amp;uid=414104&amp;ref_path=/" height="50px" title="{&quot;type&quot;:&quot;iframe-resize&quot;,&quot;data&quot;:{&quot;width&quot;:276,&quot;height&quot;:246},&quot;uuid&quot;:&quot;f596c86ee157494386aaae92550466f5&quot;}2 Dark"></iframe>
             </div>
+         </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 wow fadeInUp footer_link_last">
-        <div class="footer-menu-links-title"><h4>LINKS</h4></div>
+        <div class="footer-menu-links-title"><h4>LINKS</h4>
         <div class="footer-menu-links-items">
             <ul class="footer_list_ul_links">
                 <li class="links-menu-li-menu">
@@ -56,10 +57,16 @@ const footer = props =>(
                         <a href="https://www.linkedin.com/company/devlights/"><FaTwitter className="icons-footer-links"/></a>
                     </div>
                     </ul>
-        </div>
+            </div>
+            </div>
     </div>
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 wow fadeInUp form_email" >
+        <h4>Connect with us</h4>
+
+        <FooterForm/>
 
 
+    </div>
     
 
 

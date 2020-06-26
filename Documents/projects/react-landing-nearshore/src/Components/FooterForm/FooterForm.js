@@ -60,7 +60,7 @@ const initialState = {
   
     render() {
       return (
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit}  id="contact-form-footer" method="post" to="./sendmail-footer.php">
             <br/>
           <FormGroup>
             <Input

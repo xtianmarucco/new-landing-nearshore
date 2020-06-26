@@ -1,5 +1,6 @@
 import React from 'react';
 import './IntroSection.css';
+import Calendly from '../Calendly/Calendly'
 
 const intro = props =>(
  
@@ -12,6 +13,10 @@ const intro = props =>(
                     <br/>
                     <h4> We connnect our clients with their products</h4>
                     <br/>
+                    <br/>
+
+                    <Calendly/>
+
                     <br/>
 
 

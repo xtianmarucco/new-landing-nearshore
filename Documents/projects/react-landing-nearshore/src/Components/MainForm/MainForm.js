@@ -49,9 +49,18 @@ const initialState = {
     };
   
     handleSubmit = event => {
+      
       event.preventDefault();
       const isValid = this.validate();
       if (isValid) {
+        fetch("./sendmail-main.php", {
+          method : "POST" ,
+          headers: {'Content-Type':'application/json'},
+          body:{ name: this.state.name, email:this.state.email, message: this.state.message,}
+          
+        } ).then(( data)=>{ console.log(data)}).catch( (error)=>{ console.log(error)} )
+        
+        ;
         console.log(this.state);
         // limpiar formulario
         this.setState(initialState);
@@ -60,7 +69,7 @@ const initialState = {
   
     render() {
       return (
-        <Form onSubmit={this.handleSubmit} id="contact-form" method="post" to="./sendmail-main.php">
+        <Form onSubmit={this.handleSubmit} id="contact-form" >
           <FormGroup>
             <Input
               name="name"

@@ -1,71 +1,109 @@
-import React,  {Component} from 'react';
-import  { Form, FormGroup, Input, Label, Button,  } from 'reactstrap';
+import React from 'react';
+import  { Form, FormGroup, Input, Button  } from 'reactstrap';
 import './FooterForm.css';
 
-class footerForm extends Component {
-
-
-    constructor() {
-        super()
-        this.state = {
-            name : '',
-            email:'',
-            message:''
+const initialState = {
+    name: "",
+    email: "",
+    message: "",
+    nameError: "",
+    emailError: "",
+    messageError: ""
+  };
+  
+ class ValiationForm extends React.Component {
+    state = initialState;
+  
+    handleChange = event => {
+      const isCheckbox = event.target.type === "checkbox";
+      this.setState({
+        [event.target.name]: isCheckbox
+          ? event.target.checked
+          : event.target.value
+      });
+    };
+  
+    validate = () => {
+      let nameError = "";
+      let emailError = "";
+      let messageError = "";
+  
+      if (!this.state.name) {
+        nameError = "Escriba su nombre";
+      }
+      
+      if (!this.state.email.includes("@")) {
+          emailError = "Email invalido";
         }
+        
+      if (!this.state.name) {
+            messageError = "Escriba un mensaje";
+        };
 
-        this.handleChange =this.handleChange.bind(this)
-
+      if (emailError || nameError || messageError ) {
+        this.setState({ emailError, nameError, messageError,  });
+        return false;
+      }
+  
+      return true;
+    };
+  
+    handleSubmit = event => {
+      event.preventDefault();
+      const isValid = this.validate();
+      if (isValid) {
+        console.log(this.state);
+        // limpiar formulario
+        this.setState(initialState);
+      }
+    };
+  
+    render() {
+      return (
+        <Form onSubmit={this.handleSubmit} id="contact-form" method="post" to="./sendmail-footer.php">
+          <FormGroup>
+            <Input
+              name="name"
+              placeholder="nombre"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+            <div style={{ fontSize: 12, color: "red" }}>
+              {this.state.nameError}
+            </div>
+          </FormGroup>
+        
+          <br/>
+          <FormGroup>
+            <Input
+              name="email"
+              placeholder="email"
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
+            <div style={{ fontSize: 12, color: "red" }}>
+              {this.state.emailError}
+            </div>
+          </FormGroup>
+          <br/>
+          <FormGroup>
+            <Input
+            style={{ height: 120}}
+            placeholder="mensaje"
+             className="textarea"
+             type="textarea"
+             name="message"
+              value={this.state.message }
+              onChange={this.handleChange}
+            />
+            <div style={{ fontSize: 12, color: "red" }}>
+              {this.state.messageError}
+            </div>
+          </FormGroup>
+          <Button className="btn-send" type="submit">Enviar Mensaje</Button>
+        </Form>
+      );
     }
-
-    handleChange = e => {
-
-        this.setState({[e.target.name]: e.target.value })
-    }
-
-
-
-
-    
-
-    
-
-    render(){
-        return(
-            <Form style={{ padding: 20}} className="needs-validation"  noValidate >
-                <FormGroup>
-                    <Label for="name"/>
-                    <Input 
-                    type="text"
-                    name="name"
-                    onChange={this.handleChange}
-                    />
-                     <div className="valid-feedback">Looks good!</div>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="email"/>
-                    <Input
-                    type="email"
-                    name="email"
-                    onChange={this.handleChange}
-                    />
-                     <div className="valid-feedback">Looks good!</div>
-                </FormGroup>
-
-                <FormGroup>
-                    <Label for="message"/>
-                    <Input
-                    style={{ height: 120}}
-                    className="textarea"
-                    type="textarea"
-                    name="Message"
-                    onChange={this.handleChange}
-                    />
-                     <div className="valid-feedback">Looks good!</div>
-                </FormGroup>
-                <Button className="btn-send">Enviar Mensaje</Button>
-            </Form>
-        );
-    }
-}
-
-export default footerForm;
+  }
+ 
+export default ValiationForm ;

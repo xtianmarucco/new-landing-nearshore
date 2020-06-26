@@ -1,7 +1,8 @@
 #Team {
   padding-top: 130px;
+  padding-bottom: 130px;
   background-image: url(/team-bkg.png);
-  height: 900px;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,5 +10,14 @@
 
 #Team h1 {
   color: #5c93ce;
+  font-family: aleo;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #Team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=Team.css.map */

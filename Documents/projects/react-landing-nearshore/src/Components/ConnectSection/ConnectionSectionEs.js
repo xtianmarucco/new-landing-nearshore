@@ -21,8 +21,8 @@ const connect = props =>(
                       <div className="form-container">
                       <div className="col-sm-12 text-connect text-center">
                        <h1  style={{color:'#10b5e9' }}>Contactanos</h1>
+                      <br/>
                        <MainForm/>
-                      
                       </div>
 
                       </div>  

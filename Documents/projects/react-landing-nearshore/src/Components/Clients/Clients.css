@@ -9,6 +9,8 @@
 
 #clients h1 {
   color: #5c93ce;
+  font-family: aleo;
+  font-weight: bold;
 }
 
 #clients .carousel-item {
@@ -81,5 +83,11 @@
 
 #clients .carousel-indicators li {
   background-color: #10b5e9;
+}
+
+@media only screen and (max-width: 500px) {
+  #clients .carousel-indicators li {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Clients.css.map */

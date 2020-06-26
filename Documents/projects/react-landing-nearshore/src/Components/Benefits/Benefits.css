@@ -1,5 +1,17 @@
+#benefits {
+  padding-bottom: 150px;
+}
+
+#benefits h1 {
+  color: #5c93ce;
+  font-family: aleo;
+  font-weight: bold;
+}
+
 #benefits h4 {
   color: #5c93ce;
+  font-family: aleo;
+  font-weight: bold;
 }
 
 #benefits .flex-grid {

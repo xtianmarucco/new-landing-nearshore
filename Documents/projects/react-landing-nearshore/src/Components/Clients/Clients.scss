@@ -9,6 +9,8 @@
 
     h1{
         color: #5c93ce;
+        font-family: aleo;
+        font-weight: bold;
       }
 
      
@@ -75,6 +77,11 @@
       }
        .carousel-indicators li{
         background-color: #10b5e9;
+
+        @media only screen and (max-width: 500px){
+          display: none;
+        }
+
       }
       
 

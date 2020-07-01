@@ -18,6 +18,7 @@ import "./Navbar.css";
 class Navbar extends Component {
   state = {
     isOpen: false,
+    urlDevlights: "https://devlights.com/es",
   };
 
   toggleCollapse = () => {
@@ -51,33 +52,90 @@ class Navbar extends Component {
               >
                 <MDBNavbarNav className="float-right nav-items">
                   <MDBNavItem active>
-                    <MDBNavLink to="#!">Home</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}`)
+                      }
+                    >
+                      Home
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">About</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#about`)
+                      }
+                    >
+                      About
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Services</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#services`)
+                      }
+                    >
+                      Services
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Portfolio</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#portfolio`)
+                      }
+                    >
+                      Portfolio
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Clients</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#clients`)
+                      }
+                    >
+                      Clients
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Careers</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#careers`)
+                      }
+                    >
+                      Careers
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Contact</MDBNavLink>
+                    <MDBNavLink
+                      to="#!"
+                      onClick={() =>
+                        (window.location = `${this.state.urlDevlights}/#footer`)
+                      }
+                    >
+                      Contact
+                    </MDBNavLink>
                   </MDBNavItem>
+
                   <MDBNavItem>
                     <MDBDropdown>
                       <MDBDropdownToggle nav caret>
                         <div className="d-none d-md-inline">ES</div>
                       </MDBDropdownToggle>
+
                       <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="#!">EN</MDBDropdownItem>
+                        <MDBDropdownItem href="/">EN</MDBDropdownItem>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBNavItem>

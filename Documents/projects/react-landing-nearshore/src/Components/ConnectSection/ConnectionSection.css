@@ -3,8 +3,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #10b5e9;
   padding: 50px;
 }
@@ -40,8 +40,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 500px) {
@@ -65,7 +65,6 @@
 
 #connectionsection .form-connect .form-container {
   background-color: white;
-  height: 100%;
   width: auto;
   border-radius: 15px;
   padding: 25px;

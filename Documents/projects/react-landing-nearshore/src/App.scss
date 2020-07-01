@@ -1,27 +1,21 @@
-.App{
-
-
-
-    h1{
-        font-family: aleo;
-        color: white;
-        font-weight: bold;
-        @media only screen and (max-width: 450px) {
-         font-size: 27px;    
-         }
-                
-        
+.Home {
+  overflow: hidden;
+  h1 {
+    font-family: aleo;
+    color: white;
+    font-weight: bold;
+    @media only screen and (max-width: 450px) {
+      font-size: 27px;
     }
+  }
 
-    h4{
-        font-family: aleo;
-        color: white;
-        font-weight: bold;
+  h4 {
+    font-family: aleo;
+    color: white;
+    font-weight: bold;
 
-        @media only screen and (max-width: 450px) {
-
-            font-size: 17px;    
-                    }
-                
+    @media only screen and (max-width: 450px) {
+      font-size: 17px;
     }
+  }
 }

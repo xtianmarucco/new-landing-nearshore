@@ -8,7 +8,7 @@ class Calendly extends Component {
         <div id="schedule_form">
           <div className="calendly-inline-widget">
             <a href="https://calendly.com/devlights/30min ">
-              Schedule a FREE APPOINTMENT
+              {this.props.children}
             </a>{" "}
           </div>
         </div>

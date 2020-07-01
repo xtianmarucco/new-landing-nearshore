@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Input, Button } from "reactstrap";
+import { Form, FormGroup, Input, Button, Alert } from "reactstrap";
 import "./MainForm.css";
 
 const initialState = {
@@ -9,6 +9,7 @@ const initialState = {
   nameError: "",
   emailError: "",
   messageError: "",
+  alert: "",
 };
 
 class ValiationForm extends React.Component {
@@ -50,17 +51,37 @@ class ValiationForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const isValid = this.validate();
-    if (isValid) {
-      console.log(this.state);
-      // limpiar formulario
-      this.setState(initialState);
-    }
+    this.setState({
+      alert: "",
+    });
+    fetch("http://devlights.com/sendmail-main.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      },
+    })
+      .then((data) => {
+        this.setState({
+          alert: "Message sent!",
+        });
+
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    console.log(this.state);
+    this.setState(initialState);
   };
 
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
+        {alert && alert.length > 0 && <Alert color="success">{alert}</Alert>}
+
         <FormGroup>
           <Input
             name="name"

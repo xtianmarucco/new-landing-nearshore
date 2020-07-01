@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Input, Button } from "reactstrap";
+import { Form, FormGroup, Input, Button, Alert } from "reactstrap";
 import "./MainForm.css";
 
 const initialState = {
@@ -9,6 +9,7 @@ const initialState = {
   nameError: "",
   emailError: "",
   messageError: "",
+  alert: "",
 };
 
 class ValiationForm extends React.Component {
@@ -51,6 +52,10 @@ class ValiationForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const isValid = this.validate();
+    this.setState({
+      alert: "",
+    });
+
     if (isValid) {
       fetch("http://devlights.com/sendmail-main.php", {
         method: "POST",
@@ -62,6 +67,10 @@ class ValiationForm extends React.Component {
         },
       })
         .then((data) => {
+          this.setState({
+            alert: "Message sent!",
+          });
+
           console.log(data);
         })
         .catch((error) => {
@@ -75,6 +84,8 @@ class ValiationForm extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit} id="contact-form">
+        {alert && alert.length > 0 && <Alert color="success">{alert}</Alert>}
+
         <FormGroup>
           <Input
             name="name"

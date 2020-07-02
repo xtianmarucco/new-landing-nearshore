@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, FormGroup, Input, Button } from "reactstrap";
-import "./FooterForm.css";
+import "./FooterForm.scss";
+import { Fragment } from "react";
 
 const initialState = {
   name: "",
@@ -9,6 +10,7 @@ const initialState = {
   nameError: "",
   emailError: "",
   messageError: "",
+  alert: "",
 };
 
 class ValiationForm extends React.Component {
@@ -40,8 +42,8 @@ class ValiationForm extends React.Component {
       messageError = "Escriba un mensaje";
     }
 
+    this.setState({ emailError, nameError, messageError });
     if (emailError || nameError || messageError) {
-      this.setState({ emailError, nameError, messageError });
       return false;
     }
 
@@ -52,9 +54,26 @@ class ValiationForm extends React.Component {
     event.preventDefault();
     const isValid = this.validate();
     if (isValid) {
-      console.log(this.state);
-      // limpiar formulario
-      this.setState(initialState);
+      this.setState({
+        alert: "",
+      });
+      fetch("http://devlights.com/sendmail-main.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: {
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message,
+        },
+      })
+        .then((data) => {
+          this.setState({
+            alert: "Mensaje enviado!",
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
   };
 
@@ -62,52 +81,61 @@ class ValiationForm extends React.Component {
     return (
       <Form
         onSubmit={this.handleSubmit}
-        id="contact-form"
+        id="contact-form-footer"
         method="post"
         to="./sendmail-footer.php"
       >
-        <FormGroup>
-          <Input
-            name="name"
-            placeholder="nombre"
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }}>
-            {this.state.nameError}
-          </div>
-        </FormGroup>
+        {this.state.alert.length >= 1 && (
+          <div className="alert-message">{this.state.alert}</div>
+        )}
 
-        <br />
-        <FormGroup>
-          <Input
-            name="email"
-            placeholder="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }}>
-            {this.state.emailError}
-          </div>
-        </FormGroup>
-        <br />
-        <FormGroup>
-          <Input
-            style={{ height: 120 }}
-            placeholder="mensaje"
-            className="textarea"
-            type="textarea"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }}>
-            {this.state.messageError}
-          </div>
-        </FormGroup>
-        <Button className="btn-send" type="submit">
-          Enviar Mensaje
-        </Button>
+        {this.state.alert.length === 0 && (
+          <Fragment>
+            <br />
+            <FormGroup>
+              <Input
+                name="name"
+                placeholder="Nombre *"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+              <div style={{ fontSize: 12, color: "white" }}>
+                {this.state.nameError}
+              </div>
+            </FormGroup>
+            <br />
+            <FormGroup>
+              <Input
+                name="email"
+                placeholder="Email *"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+              <div style={{ fontSize: 12, color: "white" }}>
+                {this.state.emailError}
+              </div>
+            </FormGroup>
+            <br />
+
+            <FormGroup>
+              <Input
+                style={{ height: 120 }}
+                placeholder="Mensaje *"
+                className="textarea"
+                type="textarea"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+              />
+              <div style={{ fontSize: 12, color: "white" }}>
+                {this.state.messageError}
+              </div>
+            </FormGroup>
+            <Button className="btn-send" type="submit">
+              Enviar Mensaje
+            </Button>
+          </Fragment>
+        )}
       </Form>
     );
   }

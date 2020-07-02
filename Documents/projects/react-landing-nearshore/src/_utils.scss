@@ -1,0 +1,12 @@
+$grid-bp: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($grid-bp, $size)) {
+    @content;
+  }
+}

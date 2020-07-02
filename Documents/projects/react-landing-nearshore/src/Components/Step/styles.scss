@@ -1,0 +1,59 @@
+@import "./../../utils";
+
+.step-item {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 70px 1fr;
+  grid-template-areas: "number text" "image image";
+  gap: 24px;
+
+  @include breakpoint(md) {
+    gap: 32px;
+    grid-template-columns: 1fr 70px 1fr;
+    grid-template-areas: "text number image";
+    &.reverse {
+      grid-template-areas: "image number text";
+    }
+  }
+
+  .step-text {
+    grid-area: text;
+    box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: 500;
+    padding: 12px 16px;
+    border-radius: 14px;
+    text-align: center;
+  }
+
+  .step-number {
+    grid-area: number;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c93ce;
+    color: #fff;
+    font-family: serif;
+    border-radius: 50%;
+  }
+
+  .step-image {
+    grid-area: image;
+    justify-self: center;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+      @include breakpoint(md) {
+        max-width: none;
+      }
+    }
+  }
+}

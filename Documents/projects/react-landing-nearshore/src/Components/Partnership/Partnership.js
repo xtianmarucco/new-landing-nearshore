@@ -1,7 +1,7 @@
 import React from "react";
 import "./Partnership.css";
 
-const partnership = (props) => (
+const Partnership = (props) => (
   <section id="partnership">
     <div className="container">
       <div className="row">
@@ -29,4 +29,5 @@ const partnership = (props) => (
     </div>
   </section>
 );
-export default partnership;
+
+export default Partnership;

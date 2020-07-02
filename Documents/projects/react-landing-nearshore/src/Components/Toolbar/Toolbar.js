@@ -12,7 +12,7 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./Navbar.css";
 
 class Navbar extends Component {

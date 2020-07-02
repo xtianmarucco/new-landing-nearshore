@@ -18,7 +18,7 @@ const stepsData = [
     id: 2,
     number: 2,
     title:
-      "We team up the assets for your project and then they are ready to dig into the details and start working.",
+      "From our talent pool, we select the profiles that best match the requirements.",
     image: planning,
     direction: "reverse",
   },
@@ -26,7 +26,7 @@ const stepsData = [
     id: 3,
     number: 3,
     title:
-      "Lorem doloremque ab quos ratione fugiat saepe veniam qui recusandae.",
+      "We team up the assets for your project and then they are ready to dig into the details and start working",
     image: team,
   },
 ];

@@ -1,25 +1,24 @@
-#partnership {
-  display: flex;
-  justify-content: center;
-  background-color: #10b5e9;
-  padding: 150px;
+@import "./../../utils";
 
-  @media only screen and (max-width: 500px) {
-    padding: 85px 10px 85px 10px;
-  }
+#partnership {
+  background-color: #10b5e9;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
   h1 {
     color: white;
     font-family: aleo;
     font-weight: bold;
+    margin-bottom: 32px;
   }
 
   p {
     color: white;
+    margin-bottom: 48px;
   }
 
   .partner-btn {
-    padding: 25px;
     display: flex;
     flex-direction: column; /* stacks vertically instead of horizontally */
     justify-content: space-around; /* adds equal spacing above top, belo                                  bottom, and between all items */
@@ -31,13 +30,13 @@
     height: auto;
     border-radius: 14px;
     width: auto;
-
-    @media only screen and (max-width: 500px) {
-      padding: 0px;
-      height: 100px;
+    max-width: 600px;
+    padding: 16px;
+    @include breakpoint(md) {
+      padding: 24px;
     }
 
-    H3 {
+    h3 {
       color: orange;
       margin: 15px;
     }

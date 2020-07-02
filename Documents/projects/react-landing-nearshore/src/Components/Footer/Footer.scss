@@ -1,154 +1,121 @@
-#footer{
+#footer {
   width: 100%;
   position: relative;
-  background: url(/footer-bg.png) center bottom no-repeat;
+  background: url(/nearshore/footer-bg.png) center bottom no-repeat;
   background-size: cover;
   padding: 60px 0 275px 0;
   color: #fff !important;
   font-family: "Aleo";
-  
-  h2{
 
-      font-weight: bold;
-      color: #5c93ce;
-
+  h2 {
+    font-weight: bold;
+    color: #5c93ce;
   }
 
+  .row {
+    padding-top: 25px;
+    display: flex;
 
-.row{
-padding-top: 25px;
-display: flex;
+    img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 50px;
+    }
 
+    li {
+      list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
 
-img{
-
-  width: 200px;
-  height: auto;
-  margin-bottom: 50px;
-}
-
-
-li{ 
-    list-style: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-}
-
-
-  a {
+    a {
       color: #fff;
       text-decoration: none;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  
-  a:hover 
-  {
-       color:#fff; 
-       text-decoration:none; 
-       cursor:pointer;  
-  }
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
 
+    a:hover {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-  .links-menu-li-menu a {
+    .links-menu-li-menu a {
       display: block;
       position: relative;
       color: #fff;
-      transition: .3s;
+      transition: 0.3s;
       font-size: 14px;
-      font-family: "Open sans",sans-serif;
+      font-family: "Open sans", sans-serif;
       padding: 15px;
-  }
- 
-  iframe{
-
-      border: unset;
-      margin-top: 50px;
-  }
-  
-
-  .footer_link_last{
-  padding: 20px;
-  padding-left: 0;
-   .footer-menu-links-title{
-     h4{font-size: 18px;
-      font-weight: bold;
-      color: #fff;
-      font-family: 'Segoe UI', 'Open Sans' ;
-      margin-left: 40px;
-      margin-bottom: 25px;
-    } 
-  }
-  }
-
-   ul{
-    padding-left: 25px;
-
-    @media only screen and (max-width: 500px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr; 
-
-
-     }
-        .icons-footer{
-          position: relative;
-          right: 35px;
-          color: #5c93ce;
-          top: 25px;
-          font-size: 20px;
-
-          
-        }  
-
-        
-         
-        
-         
-   }
-    .datos{
-      @media only screen and (max-width: 500px) {
-        padding: 30px;
-
-       }
     }
 
- 
+    iframe {
+      border: unset;
+      margin-top: 50px;
+    }
 
+    .footer_link_last {
+      padding: 20px;
+      padding-left: 0;
+      .footer-menu-links-title {
+        h4 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #fff;
+          font-family: "Segoe UI", "Open Sans";
+          margin-left: 40px;
+          margin-bottom: 25px;
+        }
+      }
+    }
 
-}
- 
- .footer-menu-links-items{
-  margin-top: 45px;
+    ul {
+      padding-left: 25px;
 
-
-  .social_icons{
-    padding: 10px;
-
-     .icons-footer-links{
-          color: #5c93ce;
-          font-size: 25px;
-
-     }
-    a{
-       height: 20px;
-       margin-right: 10px;
-      
-     }
-
-
+      @media only screen and (max-width: 500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+      .icons-footer {
+        position: relative;
+        right: 35px;
+        color: #5c93ce;
+        top: 25px;
+        font-size: 20px;
+      }
+    }
+    .datos {
+      @media only screen and (max-width: 500px) {
+        padding: 30px;
+      }
+    }
   }
+
+  .footer-menu-links-items {
+    margin-top: 45px;
+
+    .social_icons {
+      padding: 10px;
+
+      .icons-footer-links {
+        color: #5c93ce;
+        font-size: 25px;
+      }
+      a {
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
   }
 
-  h4{
+  h4 {
     font-weight: 500;
     font-family: "Open sans";
     margin-left: 0px;
   }
-            
-        
-         
-
-     
 }
-
-

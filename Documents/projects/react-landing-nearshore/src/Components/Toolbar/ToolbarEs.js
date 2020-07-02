@@ -58,7 +58,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}`)
                       }
                     >
-                      Home
+                      Inicio
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -69,7 +69,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#about`)
                       }
                     >
-                      About
+                      Nosotros
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -80,7 +80,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#services`)
                       }
                     >
-                      Services
+                      Servicios
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -102,7 +102,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#clients`)
                       }
                     >
-                      Clients
+                      Clientes
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -113,7 +113,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#careers`)
                       }
                     >
-                      Careers
+                      Carreras
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -124,7 +124,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#footer`)
                       }
                     >
-                      Contact
+                      Contacto
                     </MDBNavLink>
                   </MDBNavItem>
 
@@ -135,7 +135,7 @@ class Navbar extends Component {
                       </MDBDropdownToggle>
 
                       <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="/">EN</MDBDropdownItem>
+                        <MDBDropdownItem href="/nearshore">EN</MDBDropdownItem>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBNavItem>

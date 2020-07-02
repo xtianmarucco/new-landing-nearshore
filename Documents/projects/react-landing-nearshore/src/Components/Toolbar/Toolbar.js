@@ -12,7 +12,7 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./Navbar.css";
 
 class Navbar extends Component {
@@ -134,7 +134,9 @@ class Navbar extends Component {
                       </MDBDropdownToggle>
 
                       <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="/es">ES</MDBDropdownItem>
+                        <MDBDropdownItem href="/nearshore/es">
+                          ES
+                        </MDBDropdownItem>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBNavItem>

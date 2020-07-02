@@ -1,7 +1,6 @@
-#WhyHiring{
-
+#WhyHiring {
   padding-top: 130px;
-  background-image: url(/section2bkg.png);
+  background-image: url(/nearshore/section2bkg.png);
   height: 900px;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,27 +9,23 @@
   @media only screen and (max-width: 450px) {
     padding-top: 0px;
     margin-top: -150px;
-            }
-.intro-title{
-  @media only screen and (max-width: 450px) {
-    text-align: center;
-  
+  }
+  .intro-title {
+    @media only screen and (max-width: 450px) {
+      text-align: center;
+    }
   }
 
-}
-
-  h1{
+  h1 {
     color: #5c93ce;
     font-family: aleo;
     font-weight: bold;
   }
 
-  p{
-      font-size: 17px;
-      font-weight: 500;
-      line-height: 2;
-      color: "333";
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2;
+    color: "333";
   }
 }
-
-

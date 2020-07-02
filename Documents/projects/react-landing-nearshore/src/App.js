@@ -2,17 +2,17 @@ import React from "react";
 import En from "./Components/En/En";
 import Es from "./Components/Es/Es";
 import "./App.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/nearshore">
       <Switch>
-        <Route exact path="/" component={En} />
-        <Route exact path="/es" component={Es} />
+        <Route exact path="/" component={En} key="en" />
+        <Route exact path="/es" component={Es} key="es" />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 

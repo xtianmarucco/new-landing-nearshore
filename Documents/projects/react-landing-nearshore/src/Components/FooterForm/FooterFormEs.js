@@ -68,7 +68,7 @@ class ValiationForm extends React.Component {
       })
         .then((data) => {
           this.setState({
-            alert: "Mensaje enviado!",
+              alert: "¡Mensaje enviado!",
           });
         })
         .catch((error) => {

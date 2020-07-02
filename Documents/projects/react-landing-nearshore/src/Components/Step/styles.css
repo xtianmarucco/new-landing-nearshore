@@ -1,0 +1,82 @@
+.step-item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 70px 1fr;
+      grid-template-columns: 70px 1fr;
+      grid-template-areas: "number text" "image image";
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .step-item {
+    gap: 32px;
+    -ms-grid-columns: 1fr 70px 1fr;
+        grid-template-columns: 1fr 70px 1fr;
+        grid-template-areas: "text number image";
+  }
+  .step-item.reverse {
+        grid-template-areas: "image number text";
+  }
+}
+
+.step-item .step-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+  -webkit-box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+  font-size: 17px;
+  line-height: 34px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.step-item .step-number {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: number;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  height: 70px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5c93ce;
+  color: #fff;
+  font-family: serif;
+  border-radius: 50%;
+}
+
+.step-item .step-image {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: image;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.step-item .step-image img {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .step-item .step-image img {
+    max-width: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

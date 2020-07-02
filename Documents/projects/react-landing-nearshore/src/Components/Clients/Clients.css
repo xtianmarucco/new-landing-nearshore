@@ -13,29 +13,18 @@
   font-weight: bold;
 }
 
-/* #clients .carousel .carousel-inner > .row {
-  justify-content: center;
-} */
-
 #clients .carousel-item {
   background-color: white;
   padding: 25px;
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
-  box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
+          box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.36);
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 #clients .carousel-item h4 {
   color: #5c93ce;
-}
-#clients .carousel-items {
-  overflow: hidden;
-}
-
-.carousel-inner .carousel-control-prev,
-.carousel-inner .carousel-control-next {
-  width: 100%;
 }
 
 #clients .carousel-item .profile-row {
@@ -55,12 +44,12 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* stacks vertically instead of horizontally */
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   vertical-align: middle;
   margin-left: 25px;
 }

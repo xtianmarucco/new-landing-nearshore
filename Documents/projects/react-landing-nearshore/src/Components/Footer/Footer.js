@@ -92,16 +92,16 @@ const footer = (props) => (
                   <a href="https://devlights.com/#careers">Join the team</a>
                 </li>
                 <li className="links-menu-li-menu">
-                  <a href="#services">Sevices</a>
+                  <a href="https://devlights.com/#services">Sevices</a>
                 </li>
                 <li className="links-menu-li-menu">
-                  <a href="#clients">Clients</a>
+                  <a href="https://devlights.com/#clients">Clients</a>
                 </li>
                 <li className="links-menu-li-menu">
-                  <a href="#intro">Home</a>
+                  <a href="https://devlights.com/#intro">Home</a>
                 </li>
                 <li className="links-menu-li-menu">
-                  <a href="#portfolio">Portfolio</a>
+                  <a href="https://devlights.com/#portfolio">Portfolio</a>
                 </li>
                 <br />
                 <div className="social_icons">

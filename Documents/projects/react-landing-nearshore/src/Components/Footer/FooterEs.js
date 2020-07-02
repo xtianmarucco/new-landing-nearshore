@@ -82,7 +82,7 @@ const footer = (props) => (
           <div className="footer-menu-links-items">
             <ul className="footer_list_ul_links">
               <li className="links-menu-li-menu">
-                <a href="https://devlights.com/#about">Nosotros</a>
+                <a href="https://devlights.com/es/#about">Nosotros</a>
               </li>
               <li className="links-menu-li-menu">
                 <a href="https://devlights.com/nearshore-software-development/">
@@ -90,19 +90,19 @@ const footer = (props) => (
                 </a>
               </li>
               <li className="links-menu-li-menu">
-                <a href="https://devlights.com/#careers">Unite al equipo</a>
+                <a href="https://devlights.com/es/#careers">Unite al equipo</a>
               </li>
               <li className="links-menu-li-menu">
-                <a href="#services">Servicios</a>
+                <a href="https://devlights.com/es/#services">Servicios</a>
               </li>
               <li className="links-menu-li-menu">
-                <a href="#clients">Clientes</a>
+                <a href="https://devlights.com/es/#clients">Clientes</a>
               </li>
               <li className="links-menu-li-menu">
-                <a href="#intro">Inicio</a>
+                <a href="https://devlights.com/es">Inicio</a>
               </li>
               <li className="links-menu-li-menu">
-                <a href="#portfolio">Portfolio</a>
+                <a href="https://devlights.com/es/#portfolio">Portfolio</a>
               </li>
               <br />
               <div className="social_icons">

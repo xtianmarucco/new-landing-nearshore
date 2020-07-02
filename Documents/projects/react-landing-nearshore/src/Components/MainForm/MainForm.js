@@ -52,33 +52,29 @@ class ValiationForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const isValid = this.validate();
-    this.setState({
-      alert: "",
-    });
+    if (!isValid) return;
 
-    if (isValid) {
-      fetch("http://devlights.com/sendmail-main.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: {
-          name: this.state.name,
-          email: this.state.email,
-          message: this.state.message,
-        },
-      })
-        .then((data) => {
-          this.setState({
-            alert: "Message sent!",
-          });
-
-          console.log(data);
-        })
-        .catch((error) => {
-          console.log(error);
+    fetch("http://devlights.com/sendmail-main.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      },
+    })
+      .then((data) => {
+        this.setState({
+          alert: "Message sent!",
         });
-      console.log(this.state);
-      this.setState(initialState);
-    }
+
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    console.log(this.state);
+    this.setState(initialState);
   };
 
   render() {

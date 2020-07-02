@@ -51,6 +51,8 @@ class ValiationForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    const isValid = this.validate();
+    if (!isValid) return;
     this.setState({
       alert: "",
     });
@@ -65,7 +67,7 @@ class ValiationForm extends React.Component {
     })
       .then((data) => {
         this.setState({
-          alert: "Message sent!",
+          alert: "Mensaje enviado!",
         });
 
         console.log(data);

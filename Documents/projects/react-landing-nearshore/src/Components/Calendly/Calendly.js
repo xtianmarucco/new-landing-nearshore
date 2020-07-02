@@ -6,10 +6,10 @@ class Calendly extends Component {
     return (
       <div>
         <div id="schedule_form">
-          <div className="calendly-inline-widget">
+          <div className="calendly-inline-widget text-center">
             <a href="https://calendly.com/devlights/30min ">
               {this.props.children}
-            </a>{" "}
+            </a>
           </div>
         </div>
       </div>

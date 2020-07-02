@@ -3,6 +3,7 @@ import En from "./Components/En/En";
 import Es from "./Components/Es/Es";
 import "./App.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { Helmet } from "react-helmet";
 
 function App() {
   return (

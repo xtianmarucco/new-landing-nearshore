@@ -54,7 +54,7 @@ class ValiationForm extends React.Component {
     const isValid = this.validate();
     if (!isValid) return;
 
-    fetch("http://devlights.com/sendmail-main.php", {
+    fetch("http://devlights.com/sendmail.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: {

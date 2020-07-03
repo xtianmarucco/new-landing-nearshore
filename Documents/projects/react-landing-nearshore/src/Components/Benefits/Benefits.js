@@ -44,9 +44,12 @@ const Benefits = (props) => (
           <br />
           <h4> Unleash your potencial, achieve your goals</h4>
           <br />
-          We do care about long-term relationships with clients. This is a core
-          value at Devlights. We strive to create strong relationships and work
-          together with our clients to help them succeed in the long term.
+          <p>
+            We do care about long-term relationships with clients. This is a
+            core value at Devlights. We strive to create strong relationships
+            and work together with our clients to help them succeed in the long
+            term.
+          </p>
         </div>
       </div>
     </div>

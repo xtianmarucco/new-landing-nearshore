@@ -1,10 +1,22 @@
+@import "./../../utils";
+
 #WhyHiring {
-  padding-top: 130px;
-  background-image: url(/nearshore/section2bkg.png);
-  height: 900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 164px;
+  padding-bottom: 164px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 700px;
+    background-image: url(/nearshore/section2bkg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    z-index: 100;
+  }
 
   @media only screen and (max-width: 450px) {
     padding-top: 0px;
@@ -17,7 +29,7 @@
   }
 
   h1 {
-    color: #5c93ce;
+    color: $color_primary;
     font-family: aleo;
     font-weight: bold;
   }
@@ -26,6 +38,6 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 2;
-    color: "333";
+    color: $color_dark2;
   }
 }

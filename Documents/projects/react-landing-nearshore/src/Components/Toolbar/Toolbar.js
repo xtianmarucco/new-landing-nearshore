@@ -13,7 +13,7 @@ import {
   MDBDropdownItem,
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
-import "./Navbar.css";
+import "./Toolbar.scss";
 
 class Navbar extends Component {
   state = {
@@ -32,7 +32,7 @@ class Navbar extends Component {
           <div className="container">
             <MDBNavbar
               dark
-              expand="md"
+              expand="lg"
               style={{ fontSize: 14, color: "#3333" }}
             >
               <MDBNavbarBrand>
@@ -50,7 +50,7 @@ class Navbar extends Component {
                 isOpen={this.state.isOpen}
                 navbar
               >
-                <MDBNavbarNav className="float-right nav-items">
+                <MDBNavbarNav className="float-right nav-items" right>
                   <MDBNavItem active>
                     <MDBNavLink
                       to="#!"
@@ -68,7 +68,7 @@ class Navbar extends Component {
                         (window.location = `${this.state.urlDevlights}/#about`)
                       }
                     >
-                      About
+                      About Us
                     </MDBNavLink>
                   </MDBNavItem>
 

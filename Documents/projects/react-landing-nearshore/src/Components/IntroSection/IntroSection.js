@@ -1,5 +1,5 @@
 import React from "react";
-import "./IntroSection.css";
+import "./IntroSection.scss";
 import Calendly from "../Calendly/Calendly";
 
 const intro = (props) => (
@@ -7,16 +7,10 @@ const intro = (props) => (
     <div className="container">
       <div className="row">
         <div className="intro-title col-lg-6 col-md-6 col-xs-12 col-sm-12">
-          <h1>Nearshore Software development services</h1>
-          <br />
-          <br />
-          <h4> We connnect our clients with their products</h4>
-          <br />
-          <br />
+          <h1 className="mb-3">Nearshore Software development services</h1>
+          <h4 className="mb-5"> We connnect our clients with their products</h4>
 
           <Calendly>Schedule a FREE APPOINTMENT</Calendly>
-
-          <br />
         </div>
       </div>
     </div>

@@ -11,7 +11,9 @@ const Step = ({
   return (
     <div className={`step-item ${className} ${direction}`}>
       <div className="step-text">{title}</div>
-      <div className="step-number">{number}</div>
+      <div className="step-number">
+        <span>{number}</span>
+      </div>
       <div className="step-image">
         <img className="img-fluid" src={image} alt={title} />
       </div>

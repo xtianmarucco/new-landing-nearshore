@@ -1,16 +1,22 @@
-.calendly-inline-widget{
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 10px 18px 74px -13px rgba(133, 133, 133, 1);
-    width: fit-content;
+@import "./../../utils";
 
+.calendly-inline-widget {
+  background-color: $color_light;
+  padding: 10px 22px;
+  border-radius: 15px;
+  width: fit-content;
+  @include elevation(6);
 
-    a{
-        text-decoration: none;
-        color: orange;
-        font-size: 20px;
-        font-weight: 500;
+  a {
+    text-decoration: none;
+    color: $color_secondary;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $font2;
+
+    &:hover {
+      text-decoration: none;
+      color: $color_secondary;
     }
-
+  }
 }

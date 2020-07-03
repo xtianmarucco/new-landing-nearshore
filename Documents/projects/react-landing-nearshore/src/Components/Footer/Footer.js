@@ -1,6 +1,6 @@
 import React from "react";
 import FooterForm from "../FooterForm/FooterForm";
-import "./Footer.css";
+import "./Footer.scss";
 import {
   FaMapMarkerAlt,
   FaEnvelope,

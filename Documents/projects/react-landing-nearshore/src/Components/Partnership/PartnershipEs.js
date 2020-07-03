@@ -16,7 +16,7 @@ const Partnership = (props) => (
           </p>
 
           <a className="partner-btn container" href="#connectionsection">
-            <h3>Contanos más sobre tu proyecto</h3>
+            Contanos más sobre tu proyecto
           </a>
         </div>
       </div>

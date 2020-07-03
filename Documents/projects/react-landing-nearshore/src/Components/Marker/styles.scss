@@ -1,0 +1,16 @@
+@import "./../../utils";
+
+.marker {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  left: -64px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color_secondary;
+  @include breakpoint(md) {
+    display: block;
+  }
+}

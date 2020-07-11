@@ -7,7 +7,7 @@ import "./Benefits.scss";
 const Benefits = (props) => (
   <section id="benefits">
     <div className="container">
-      <h1 className="text-center">Benefits</h1>
+      <h1 className="text-center">Our service stands out from the rest.</h1>
       <div className="row flex-grid benefits-container">
         <div className="benefit-card text-center col-md-4 col-sm-12 col-xs-12">
           <img className="img-fluid" src={benefits1} alt="office" />

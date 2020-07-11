@@ -3,4 +3,11 @@
 .steps {
   display: grid;
   gap: 48px;
+  .step-item {
+    &:last-child {
+      .vertical-line {
+        display: none;
+      }
+    }
+  }
 }

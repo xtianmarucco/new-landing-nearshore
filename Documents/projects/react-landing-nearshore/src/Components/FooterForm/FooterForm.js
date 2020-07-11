@@ -57,7 +57,7 @@ class ValiationForm extends React.Component {
       this.setState({
         alert: "",
       });
-      fetch("https://devlights.com/sendmail.php", {
+      fetch("https://devlights.com/nearshore/sendmail-footer.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: {
@@ -79,12 +79,7 @@ class ValiationForm extends React.Component {
 
   render() {
     return (
-      <Form
-        onSubmit={this.handleSubmit}
-        id="contact-form-footer"
-        method="post"
-        to="./sendmail-footer.php"
-      >
+      <Form onSubmit={this.handleSubmit} id="contact-form-footer">
         {this.state.alert.length >= 1 && (
           <div className="alert-message">{this.state.alert}</div>
         )}

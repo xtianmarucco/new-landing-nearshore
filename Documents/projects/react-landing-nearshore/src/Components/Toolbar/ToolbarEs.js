@@ -13,7 +13,7 @@ import {
   MDBDropdownItem,
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
-import "./Toolbar.scss";
+import "./toolbar.scss";
 
 class Navbar extends Component {
   state = {

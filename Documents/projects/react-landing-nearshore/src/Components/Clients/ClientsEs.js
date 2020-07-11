@@ -3,7 +3,7 @@ import ross from "./ross.png";
 import darlene from "./darlene.png";
 import lindsay from "./lindsay.png";
 import stars from "./stars.png";
-
+import "aos";
 import "./Clients.css";
 
 const Clients = (props) => (
@@ -53,7 +53,7 @@ const Clients = (props) => (
                   </a>
                 </div>
 
-                <div className="col-10 carousel-items">
+                <div className="col-12 carousel-items" data-aos={"fade-left"}>
                   <div className="carousel-item active">
                     <div className="client-card ">
                       <div className="profile-row">
@@ -65,7 +65,15 @@ const Clients = (props) => (
                             <h4> Lindsay Insco</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Millenium Digital Technologies</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Millenium Digital Technologies
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
@@ -74,8 +82,18 @@ const Clients = (props) => (
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Lead Developer</p>
-                        <p>
+                        <p
+                          style={{
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                            color: "#33333a",
+                          }}
+                        >
+                          Lead Developer
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           El equipo de Devlights ha sido de gran ayuda, los
                           considero casi familia. Amplia experiencia y
                           conocimientos técnicos, siempre tienen el personal
@@ -87,7 +105,7 @@ const Clients = (props) => (
                     </div>
                   </div>
 
-                  <div className="carousel-item">
+                  <div className="carousel-item" data-aos={"fade-left"}>
                     <div className="client-card">
                       <div className="profile-row">
                         <div className="img-container">
@@ -98,7 +116,15 @@ const Clients = (props) => (
                             <h4>Ross Forsyth</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Human design</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Human design
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
@@ -107,8 +133,18 @@ const Clients = (props) => (
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Director of technology</p>
-                        <p>
+                        <p
+                          style={{
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                            color: "#33333a",
+                          }}
+                        >
+                          Director of technology
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           Devlights es un gran equipo con el cual trabajar, no
                           solo tienen las habilidades para realizar el trabajo,
                           sino que también se comunican de manera efectiva a lo
@@ -119,7 +155,7 @@ const Clients = (props) => (
                     </div>
                   </div>
 
-                  <div className="carousel-item">
+                  <div className="carousel-item" data-aos={"fade-left"}>
                     <div className="client-card">
                       <div className="profile-row">
                         <div className="img-container">
@@ -130,7 +166,15 @@ const Clients = (props) => (
                             <h4>Darlene Liebman</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Creative Humans</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Creative Humans
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
@@ -139,8 +183,18 @@ const Clients = (props) => (
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Fundadora</p>
-                        <p>
+                        <p
+                          style={{
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                            color: "#33333a",
+                          }}
+                        >
+                          Fundadora
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           Trabajar con el equipo de Devlights ha sido una gran
                           experiencia. El equipo tiene los conocimientos,
                           responde y son muy amables. Realmente los recomiendo

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ConnectionSection.css";
+import "./ConnectionSection.scss";
 import MainForm from "../MainForm/MainFormEs";
 
 const connect = (props) => (

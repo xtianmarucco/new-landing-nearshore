@@ -8,7 +8,7 @@ const Partnership = (props) => (
         <div className="col-12">
           <h1>¡Trabajemos juntos en su proximo proyecto!</h1>
 
-          <p>
+          <p style={{ fontFamily: "open sans" }}>
             destaca del resto porque es capaz de ofrecer soluciones de software
             END-TO-END a todos sus clientes. Contamos con un calificado staff de
             profesionales que es capaz de enfrentar cualquier tipo de desafío

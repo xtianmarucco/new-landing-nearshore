@@ -17,8 +17,11 @@
 
       .step-number {
         &:after {
-          left: -10px;
+          left: -6px;
           transform: rotate(45deg);
+          border-radius: 5px;
+          z-index: 0;
+          box-shadow: unset;
         }
       }
     }
@@ -70,15 +73,17 @@
     }
 
     &:after {
-      z-index: 1;
+      z-index: 0;
       width: 24px;
       height: 24px;
       background-color: $color_terciary;
       content: "";
       position: absolute;
-      left: 52px;
+      left: 47px;
       transform: rotate(45deg);
       border: 2px solid $color_light;
+      border-radius: 5px;
+
       @include elevation(2);
     }
   }
@@ -94,5 +99,20 @@
         max-width: none;
       }
     }
+  }
+}
+.vertical-line {
+  width: 10px;
+  height: 222px;
+  background-color: #20a088;
+  position: absolute;
+  top: 65px;
+  z-index: -1;
+  @media (max-width: 760px) {
+    height: 340px;
+    top: 65px;
+  }
+  @media (max-width: 411px) {
+    display: none;
   }
 }

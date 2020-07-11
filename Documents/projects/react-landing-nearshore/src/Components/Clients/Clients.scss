@@ -27,9 +27,14 @@
     .profile-row {
       display: flex;
 
-      img {
+      .img-client {
         width: 150px;
         height: auto;
+
+        @media only screen and (max-width: 500px) {
+          width: 100px;
+          height: auto;
+        }
       }
     }
 
@@ -42,15 +47,19 @@
     }
 
     .rating {
-      margin-top: 82px;
+      margin-top: 90px;
       margin-left: 30px;
 
       @media only screen and (max-width: 500px) {
-        position: absolute;
-        top: 70px;
+        img {
+          margin-left: -10px;
+        }
       }
     }
-
+    .client-position {
+      color: rgb(51, 51, 51);
+      font-family: "open sans";
+    }
     .client-testimony {
       padding-top: 25px;
 

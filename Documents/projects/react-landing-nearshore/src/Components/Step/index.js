@@ -13,6 +13,7 @@ const Step = ({
       <div className="step-text">{title}</div>
       <div className="step-number">
         <span>{number}</span>
+        <div className="vertical-line"></div>
       </div>
       <div className="step-image">
         <img className="img-fluid" src={image} alt={title} />

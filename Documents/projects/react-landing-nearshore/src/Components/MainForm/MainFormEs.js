@@ -1,6 +1,7 @@
 import React from "react";
-import { Form, FormGroup, Input, Button, Alert } from "reactstrap";
-import "./MainForm.css";
+import { Form, FormGroup, Input, Button } from "reactstrap";
+import "./MainForm.scss";
+import { Fragment } from "react";
 
 const initialState = {
   name: "",
@@ -41,8 +42,8 @@ class ValiationForm extends React.Component {
       messageError = "Escriba un mensaje";
     }
 
+    this.setState({ emailError, nameError, messageError });
     if (emailError || nameError || messageError) {
-      this.setState({ emailError, nameError, messageError });
       return false;
     }
 
@@ -52,79 +53,98 @@ class ValiationForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const isValid = this.validate();
-    if (!isValid) return;
-    this.setState({
-      alert: "",
-    });
-    fetch("https://devlights.com/sendmail.php", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message,
-      },
-    })
-      .then((data) => {
-        this.setState({
-          alert: "Mensaje enviado!",
-        });
-
-        console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
+    if (isValid) {
+      this.setState({
+        alert: "",
       });
-    console.log(this.state);
-    this.setState(initialState);
+      fetch("https://devlights.com/nearshore/sendmail-main.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: {
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message,
+        },
+      })
+        .then((data) => {
+          this.setState({
+            alert: "¡Mensaje enviado!",
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
-        {alert && alert.length > 0 && <Alert color="success">{alert}</Alert>}
+      <Form onSubmit={this.handleSubmit} id="contact-form-footer">
+        {this.state.alert.length >= 1 && (
+          <div
+            className="alert-message"
+            style={{ fontSize: 30, color: "green" }}
+          >
+            {this.state.alert}
+          </div>
+        )}
 
-        <FormGroup>
-          <Input
-            name="name"
-            placeholder="Nombre *"
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }} className="text-left">
-            {this.state.nameError}
-          </div>
-        </FormGroup>
-        <br />
-        <FormGroup>
-          <Input
-            name="email"
-            placeholder="Email *"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }} className="text-left">
-            {this.state.emailError}
-          </div>
-        </FormGroup>
-        <br />
-        <FormGroup>
-          <Input
-            style={{ height: 120 }}
-            placeholder="Mensaje *"
-            className="textarea"
-            type="textarea"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-          />
-          <div style={{ fontSize: 12, color: "red" }} className="text-left">
-            {this.state.messageError}
-          </div>
-        </FormGroup>
-        <Button className="btn-send" type="submit">
-          Enviar Mensaje
-        </Button>
+        {this.state.alert.length === 0 && (
+          <Fragment>
+            <br />
+            <FormGroup>
+              <Input
+                name="name"
+                placeholder="Nombre *"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+              <div
+                class="text-left ml-1"
+                style={{ fontSize: 12, color: "red" }}
+              >
+                {this.state.nameError}
+              </div>
+            </FormGroup>
+            <br />
+            <FormGroup>
+              <Input
+                name="email"
+                placeholder="Email *"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+              <div
+                class="text-left ml-1"
+                style={{ fontSize: 12, color: "red" }}
+              >
+                {this.state.emailError}
+              </div>
+            </FormGroup>
+            <br />
+
+            <FormGroup>
+              <Input
+                style={{ height: 120 }}
+                placeholder="Mensaje *"
+                className="textarea"
+                type="textarea"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+              />
+              <div
+                class="text-left ml-1"
+                style={{ fontSize: 12, color: "red" }}
+              >
+                {this.state.messageError}
+              </div>
+            </FormGroup>
+            <Button className="btn-send" type="submit">
+              Enviar Mensaje
+            </Button>
+          </Fragment>
+        )}
       </Form>
     );
   }

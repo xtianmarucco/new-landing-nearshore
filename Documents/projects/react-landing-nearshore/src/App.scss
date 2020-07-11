@@ -5,6 +5,8 @@ html {
   font-size: 16px;
   color: $color_light;
   margin: 0;
+
+  scroll-behavior: smooth;
 }
 body {
   font-family: $font1;
@@ -26,6 +28,10 @@ a {
     @media only screen and (max-width: 450px) {
       font-size: 27px;
     }
+  }
+
+  p {
+    font-family: "open sans";
   }
 
   h4 {

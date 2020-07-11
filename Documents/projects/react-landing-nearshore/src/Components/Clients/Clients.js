@@ -3,8 +3,8 @@ import ross from "./ross.png";
 import darlene from "./darlene.png";
 import lindsay from "./lindsay.png";
 import stars from "./stars.png";
-
-import "./Clients.css";
+import "aos";
+import "./Clients.scss";
 
 const Clients = (props) => (
   <section id="clients">
@@ -53,29 +53,55 @@ const Clients = (props) => (
                   </a>
                 </div>
 
-                <div className="col-10 carousel-items">
+                <div className="col-12 carousel-items">
                   <div className="carousel-item active">
                     <div className="client-card ">
                       <div className="profile-row">
                         <div className="img-container">
-                          <img className="img-fluid" src={darlene} alt="meet" />
+                          <img
+                            className="img-fluid img-client"
+                            src={darlene}
+                            alt="meet"
+                          />
                         </div>
                         <div className="data-container text-left">
                           <div className="client-name">
                             <h4>Darlene Liebman</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Creative Humans</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Creative Humans
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
-                          <img className="img-fluid" src={stars} alt="meet" />
+                          <img
+                            className="img-fluid img-client"
+                            src={stars}
+                            alt="meet"
+                          />
                         </div>
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Founder</p>
-                        <p>
+                        <p
+                          style={{
+                            color: "#33333a",
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Founder
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           {" "}
                           Working with the team at Devlights has been a great
                           experience. The Team is knowledgeable, responsive and
@@ -90,14 +116,26 @@ const Clients = (props) => (
                     <div className="client-card">
                       <div className="profile-row">
                         <div className="img-container">
-                          <img className="img-fluid" src={ross} alt="meet" />
+                          <img
+                            className="img-fluid img-client"
+                            src={ross}
+                            alt="meet"
+                          />
                         </div>
                         <div className="data-container text-left">
                           <div className="client-name">
                             <h4>Ross Forsyth</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Human design</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Human design
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
@@ -106,8 +144,18 @@ const Clients = (props) => (
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Director of technology</p>
-                        <p>
+                        <p
+                          style={{
+                            color: "#33333a",
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Director of technology
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           {" "}
                           DevLights is a great team to work with. Not only do
                           they have the skills to get the job done but they
@@ -129,7 +177,15 @@ const Clients = (props) => (
                             <h4>Lindsay Insco</h4>
                           </div>
                           <div className="client-position">
-                            <h6>Millenium Digital Technologies</h6>
+                            <h6
+                              style={{
+                                fontFamily: "open sans",
+                                fontWeight: "bold",
+                                color: "#33333a",
+                              }}
+                            >
+                              Millenium Digital Technologies
+                            </h6>
                           </div>
                         </div>
                         <div className="rating">
@@ -138,8 +194,18 @@ const Clients = (props) => (
                       </div>
 
                       <div className="client-testimony text-left ">
-                        <p>Lead Developer</p>
-                        <p>
+                        <p
+                          style={{
+                            color: "#33333a",
+                            fontFamily: "open sans",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Lead Developer
+                        </p>
+                        <p
+                          style={{ color: "#33333a", fontFamily: "open sans" }}
+                        >
                           {" "}
                           Devlights has been such a useful team, I’ve come to
                           look at them like family. With the variety of

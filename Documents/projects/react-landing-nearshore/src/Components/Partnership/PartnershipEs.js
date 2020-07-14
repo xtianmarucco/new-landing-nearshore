@@ -9,10 +9,11 @@ const Partnership = (props) => (
           <h1>¡Trabajemos juntos en su proximo proyecto!</h1>
 
           <p style={{ fontFamily: "open sans" }}>
-            destaca del resto porque es capaz de ofrecer soluciones de software
-            END-TO-END a todos sus clientes. Contamos con un calificado staff de
-            profesionales que es capaz de enfrentar cualquier tipo de desafío
-            técnico. El cliente pone los requerimientos, nosotros la solución.
+            Destacamos del resto porque es capaz de ofrecer soluciones de
+            software END-TO-END a todos sus clientes. Contamos con un calificado
+            staff de profesionales que es capaz de enfrentar cualquier tipo de
+            desafío técnico. El cliente pone los requerimientos, nosotros la
+            solución.
           </p>
 
           <a className="partner-btn container" href="#connectionsection">

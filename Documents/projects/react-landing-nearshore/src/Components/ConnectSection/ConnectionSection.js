@@ -22,17 +22,17 @@ const connect = (props) => (
             resources to the process. However, sometimes the budget or time
             frames are tight, or the company might simply need a full-time
             remote talent to do a specific job. In this case,
-            staffing-as-a-service is the way to go in such a case and IT
-            DEVLIGHTS is capable of providing highly-skilled specialists
-            short-term and long-term IT staffing projects built to your
-            specification and for a fraction of the cost.
+            staffing-as-a-service is the way to go in such a case. DEVLIGHTS is
+            capable of providing highly-skilled specialists short-term and
+            long-term IT staffing projects built to your specification and for a
+            fraction of the cost.
           </p>
         </div>
 
         <div className="col-12 col-lg-6 text-center form-connect">
           <div className="form-container">
             <div className="col-sm-12  text-center">
-              <h1 style={{ color: "#10b5e9" }}>Let´s get in touch</h1>
+              <h1 style={{ color: "#10b5e9" }}>Let's get in touch</h1>
               <br />
               <MainForm />
             </div>

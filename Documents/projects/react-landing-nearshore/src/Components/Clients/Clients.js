@@ -157,7 +157,7 @@ const Clients = (props) => (
                           style={{ color: "#33333a", fontFamily: "open sans" }}
                         >
                           {" "}
-                          DevLights is a great team to work with. Not only do
+                          Devlights is a great team to work with. Not only do
                           they have the skills to get the job done but they
                           communicate effectively at every level throughout the
                           project. Their team was just what we needed!
@@ -220,7 +220,7 @@ const Clients = (props) => (
                 </div>
 
                 <div className="col-1">
-                  <a
+                  {/* <a
                     className="carousel-control-next"
                     href="#carouselExampleIndicators"
                     role="button"
@@ -231,7 +231,7 @@ const Clients = (props) => (
                       aria-hidden="true"
                     ></span>
                     <span className="sr-only">Next</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

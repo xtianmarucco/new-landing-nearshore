@@ -33,7 +33,7 @@ const Benefits = (props) => (
           <h4> Precios incomparable, transparencia, eficacia conveniencia </h4>
           <br />
           <p>
-            En devlights le brindamos términos claros de Contratación, y somos
+            En Devlights le brindamos términos claros de contratación, y somos
             capaces de brindarle especialistas en cada tecnología para formar
             parte de su equipo por una fracción de lo que costaría contratar
             talento local.

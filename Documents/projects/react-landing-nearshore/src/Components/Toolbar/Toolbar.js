@@ -134,7 +134,7 @@ class Navbar extends Component {
                       </MDBDropdownToggle>
 
                       <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="/nearshore/es">
+                        <MDBDropdownItem href="/nearshore-software-development/es">
                           ES
                         </MDBDropdownItem>
                       </MDBDropdownMenu>

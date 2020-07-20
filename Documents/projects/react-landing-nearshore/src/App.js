@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter basename="/nearshore">
+    <BrowserRouter basename="/nearshore-software-development/">
       <Switch>
         <Route exact path="/" component={En} key="en" />
         <Route exact path="/es" component={Es} key="es" />
